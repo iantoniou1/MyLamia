@@ -24,6 +24,7 @@ import android.graphics.drawable.Drawable;
 public class DirectoryEntry {
     private String name;
     private int resID;
+    private int resID1;
     private Subcategory[] subs;
     
     public DirectoryEntry(String name, Subcategory[] subs) {
@@ -43,7 +44,7 @@ public class DirectoryEntry {
     }
 	
 
-    public DirectoryEntry(String name, int resID) {
+    public DirectoryEntry(String name, int resID, int resID1) {
         this.name = name;
         this.resID = resID;
        
@@ -57,8 +58,8 @@ public class DirectoryEntry {
         return res.getString(resID);
     }
     
-    public Drawable getDrawable(Resources res) {
-        return res.getDrawable(resID);
+    public Drawable getDrawable(Resources res1) {
+        return res1.getDrawable(resID1);
     }
 
     public Bitmap getBitmap(Resources res) {

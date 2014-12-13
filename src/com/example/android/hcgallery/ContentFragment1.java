@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2011 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.example.android.hcgallery;
 
 import android.app.ActionBar;
@@ -51,8 +35,8 @@ import java.util.StringTokenizer;
  * When running on a screen size smaller than "large", this fragment is hosted in
  * ContentActivity. Otherwise, it appears side by side with the TitlesFragment
  * in MainActivity. */
-public class ContentFragment extends Fragment {
-    private View mContentView;
+public class ContentFragment1 extends Fragment {
+    private View mContentView1;
     private int mCategory = 0;
     private int mCurPosition = 0;
     private boolean mSystemUiVisible = true;
@@ -64,14 +48,13 @@ public class ContentFragment extends Fragment {
     // Current action mode (contextual action bar, a.k.a. CAB)
     private ActionMode mCurrentActionMode;
 	
-
     /** This is where we initialize the fragment's UI and attach some
      * event listeners to UI components.
      */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-       mContentView = inflater.inflate(R.layout.content_welcome, null);
+       mContentView1 = inflater.inflate(R.layout.content_axiotheata, null);
     //   final ImageView imageView = (ImageView) mContentView.findViewById(R.id.image);
       // mContentView.setDrawingCacheEnabled(false);
       
@@ -79,7 +62,7 @@ public class ContentFragment extends Fragment {
     
 
         // Handle drag events when a list item is dragged into the view
-        mContentView.setOnDragListener(new View.OnDragListener() {
+        mContentView1.setOnDragListener(new View.OnDragListener() {
             public boolean onDrag(View view, DragEvent event) {
                 switch (event.getAction()) {
                     case DragEvent.ACTION_DRAG_ENTERED:
@@ -103,7 +86,7 @@ public class ContentFragment extends Fragment {
         });
 
         // Show/hide the system status bar when single-clicking a photo.
-        mContentView.setOnClickListener(new OnClickListener() {
+        mContentView1.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
                 if (mCurrentActionMode != null) {
                   // If we're in an action mode, don't toggle the action bar
@@ -120,7 +103,7 @@ public class ContentFragment extends Fragment {
 
         // When long-pressing a photo, activate the action mode for selection, showing the
         // contextual action bar (CAB).
-        mContentView.setOnLongClickListener(new View.OnLongClickListener() {
+        mContentView1.setOnLongClickListener(new View.OnLongClickListener() {
             public boolean onLongClick(View view) {
                 if (mCurrentActionMode != null) {
                     return false;
@@ -133,27 +116,12 @@ public class ContentFragment extends Fragment {
             }
         });
 
-        return mContentView;
+        return mContentView1;
     }
     
     
     
-  //  mContentView1 = inflater.inflate(R.layout.content_axiotheata, null);
- //   final ImageView imageView1 = (ImageView) mContentView1.findViewById(R.id.kastro);
- //   mContentView1.setDrawingCacheEnabled(false);
-    
-    
-   
-    
-   
-    
-    
-    
-    
-    //mContentView2 = inflater.inflate(R.layout.content_kafes, null);
-   // mContentView3 = inflater.inflate(R.layout.content_nightlife, null);
-   // mContentView4 = inflater.inflate(R.layout.content_shopping, null);
-   // mContentView5 = inflater.inflate(R.layout.content_emergency, null);
+ 
     
 
     /** This is where we perform additional setup for the fragment that's either
@@ -412,7 +380,7 @@ public class ContentFragment extends Fragment {
         }
 
         public void onDestroyActionMode(ActionMode actionMode) {
-            mContentView.setSelected(false);
+            mContentView1.setSelected(false);
             mCurrentActionMode = null;
         }
     };
