@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.hcgallery;
+/*package com.example.android.hcgallery;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -25,25 +25,7 @@ public class DirectoryEntry {
     private String name;
     private int resID;
     private int resID1;
-    private Subcategory[] subs;
-    
-    public DirectoryEntry(String name, Subcategory[] subs) {
-        this.name = name;
-        this.subs = subs;
-      
-    }
-    
    
-
-    public int getEntryCount() {
-        return subs.length;
-    }
-
-    public Subcategory getEntry(int i) {
-        return subs[i];
-    }
-	
-
     public DirectoryEntry(String name, int resID, int resID1) {
         this.name = name;
         this.resID = resID;
@@ -65,4 +47,57 @@ public class DirectoryEntry {
     public Bitmap getBitmap(Resources res) {
         return BitmapFactory.decodeResource(res, resID);
     }
+}*/
+
+
+
+
+
+package com.example.android.hcgallery;
+
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+
+public class DirectoryEntry {
+    private String name;
+    private int resID;
+
+    public DirectoryEntry(String name) {
+        this.name = name;
+        
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Bitmap getBitmap(Resources res) {
+        return BitmapFactory.decodeResource(res, resID);
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
