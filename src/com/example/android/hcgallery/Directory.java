@@ -25,10 +25,10 @@ public class Directory {
                 		
                 		new DirectoryEntry("Καλώς Ήρθατε", R.string.Welcome, R.drawable.donut),
                 		new DirectoryEntry("Αξιοθέατα", R.string.Axiotheata,R.drawable.kastro),
-                		// new DirectoryEntry("Αξιοθέατα", new Subcategory[]{
-                         //		new Subcategory("ioanna", R.string.Axiotheata)}),
-                      //  new DirectoryEntry("Εστιατόρια & Καφετέριες", R.string.Kafes),
-                      //  new DirectoryEntry("Νυχτερινή Ζωή", R.string.Nightlife),
+                		//new DirectoryEntry("Αξιοθέατα", new Subcategory[]{
+                        // 	new Subcategory("ioanna", R.string.Axiotheata)}),
+                       // new DirectoryEntry("Εστιατόρια & Καφετέριες", R.string.Kafes),
+                        //new DirectoryEntry("Νυχτερινή Ζωή", R.string.Nightlife),
                         //new DirectoryEntry("Ώρα για ψώνια", R.string.Shopping),
                         //new DirectoryEntry("Υπηρεσίες Έκτακτης Ανάγκης", R.string.Emergency),
                                               

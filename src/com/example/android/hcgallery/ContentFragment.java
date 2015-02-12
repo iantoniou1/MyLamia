@@ -189,7 +189,7 @@ public class ContentFragment extends Fragment {
         }
 
         if (mSoloFragment) {
-          String title = Directory.getCategory(mCategory).getEntry(mCurPosition).getName();
+         String title = Directory.getCategory(mCategory).getEntry(mCurPosition).getName();
           ActionBar bar = getActivity().getActionBar();
           bar.setTitle(title);
         }
@@ -313,9 +313,9 @@ public class ContentFragment extends Fragment {
         }
 
         // Get the bitmap that needs to be drawn and update the ImageView
-       // mBitmap = Directory.getCategory(category).getEntry(position)
-         //       .getBitmap(getResources());
-       // ((ImageView) getView().findViewById(R.id.image)).setImageBitmap(mBitmap);
+        mBitmap = Directory.getCategory(category).getEntry(position)
+               .getBitmap(getResources());
+       ((ImageView) getView().findViewById(R.id.image)).setImageBitmap(mBitmap);
     }
 
     /** Share the currently selected photo using an AsyncTask to compress the image

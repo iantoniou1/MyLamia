@@ -3,7 +3,7 @@ package com.example.android.hcgallery;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class AxiotheataActivity extends Activity {
+public class AxiotheataFragment extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -90,8 +90,8 @@ public class TitlesFragment extends ListFragment implements ActionBar.TabListene
         // Must call in order to get callback to onCreateOptionsMenu()
         setHasOptionsMenu(true);
 
-        Directory.initializeDirectory();
-        for (int i = 0; i < Directory.getCategoryCount(); i++) {
+       Directory.initializeDirectory();
+       for (int i = 0; i < Directory.getCategoryCount(); i++) {
             bar.addTab(bar.newTab().setText(Directory.getCategory(i).getName())
                     .setTabListener(this));
         }
