@@ -23,9 +23,9 @@ public class Directory {
       mCategories = new DirectoryCategory[] {
                 new DirectoryCategory("ΠΛΟΗΓΗΣΗ", new DirectoryEntry[] {
                 		
-                		//new DirectoryEntry("Καλώς Ήρθατε", R.string.Welcome, R.drawable.donut),
-                		new DirectoryEntry("Αξιοθέατα"),
-                       new DirectoryEntry("Εστιατόρια & Καφετέριες"),
+                		new DirectoryEntry("Καλώς Ήρθατε", R.string.Welcome, R.drawable.donut),
+                		new DirectoryEntry("Αξιοθέατα", R.string.Axiotheata, R.drawable.froyo),
+                       //new DirectoryEntry("Εστιατόρια & Καφετέριες"),
                         //new DirectoryEntry("Νυχτερινή Ζωή", R.string.Nightlife),
                         //new DirectoryEntry("Ώρα για ψώνια", R.string.Shopping),
                         //new DirectoryEntry("Υπηρεσίες Έκτακτης Ανάγκης", R.string.Emergency),
